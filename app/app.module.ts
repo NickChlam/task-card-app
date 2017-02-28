@@ -7,11 +7,11 @@ import { CardComponent } from './card/card.component';
 
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ AppComponent ],
-    bootstrap: [ 
-        AppComponent,
-        CardComponent
-        ]
+    declarations:   [ 
+                    AppComponent,
+                    CardComponent
+                    ],
+    bootstrap: [ AppComponent]
 })
 
 export class AppModule { }
