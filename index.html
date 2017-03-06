@@ -9,27 +9,29 @@
         <link rel="sylesheet" href="styles.css">
 
         <!-- Polyfils for older browsers -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
         <script src="node_modules/core-js/client/shim.min.js"></script>
         <script src="node_modules/zone.js/dist/zone.js"></script>
         <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <Script src="node_modules/tether/dist/js/tether.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
        
     </head>
 
     <body>
+        <div class = "container">
+            <my-app>Loading, please wait....</my-app>
+            <!--Systemjs Config -->
+            <script src="systemjs.config.js"></script>
+            <script>
+                System.import('app').catch(function(err){ console.error(err); });
 
-        <my-app>Loading, please wait....</my-app>
- <!--Systemjs Config -->
-        <script src="systemjs.config.js"></script>
-        <script>
-            System.import('app').catch(function(err){ console.error(err); });
-
-        </script>
+            </script>
+        </div>
     </body>
 
 
