@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Task } from './model/task';
+
 @Component({
     moduleId: module.id,
     selector: 'my-app',
@@ -18,6 +19,7 @@ export class AppComponent {
             false
         ),
    ]
+   private currentTask = new Task(null, false);
    
 }
  
