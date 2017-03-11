@@ -26,6 +26,7 @@ export class AppComponent {
         let task = new Task(this.currentTask.content, this.currentTask.completed);
         this.tasks.push(task);
         
+    
    }
 }
  
