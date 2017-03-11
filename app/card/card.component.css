@@ -2,10 +2,14 @@
     border-radius: 0;
 }
 .card,
-.card-fiit {
+.card-footer {
     background-color: #FFFFA5;
     border: none;
-
+}
+.card.completed,
+.card.completed .card-footer {
+    background-color: #EEE;
+    color: #CCC;
 }
 .card-footer {
     text-align: right;
